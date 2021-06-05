@@ -44,6 +44,6 @@ let masterTL = gsap.timeline({ repeat: -1 }).pause()
 words.forEach((word) => {
   let tl = gsap.timeline({ repeat: 1, yoyo: true, repeatDelay: 1 })
 
-  tl.to('.text', { duration: 1, text: word })
+  tl.to('.text', { duration: 1.3, text: word })
   masterTL.add(tl)
 })
